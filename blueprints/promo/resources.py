@@ -20,16 +20,28 @@ class Promotion(Resource):
     def get(self):
         words = self.caption.split(' ')
         if 'Jokowi' in words and 'HAPPY' in words and 'BIRTHDAY' in words:
-            if self.score > 0.7:
+            if self.score > 0.8:
                 return {
                     'Makanan'   :self.foodname,
                     'Diskon'    :'50%',
+                    'Gambar'    :self.pict
+                }
+            elif self.score > 0.5:
+                return {
+                    'Makanan'   :self.foodname,
+                    'Diskon'    :'30%',
                     'Gambar'    :self.pict
                 }
             elif self.score > 0.2:
                 return {
                     'Makanan'   :self.foodname,
                     'Diskon'    :'20%',
+                    'Gambar'    :self.pict
+                }
+            elif self.score > 0:
+                return {
+                    'Makanan'   :self.foodname,
+                    'Diskon'    :'10%',
                     'Gambar'    :self.pict
                 }
             else:
