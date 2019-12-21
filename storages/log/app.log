@@ -215,3 +215,119 @@ KeyError: 'confidence'
 [2019-12-21 17:00:16,769]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/faceplus?", "request": {}, "response": {"confidence": 21.28}}
 [2019-12-21 17:05:25,294]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9jezE1&oh=fc072ffe40c35123812215871383404e&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
 [2019-12-21 17:36:31,364]{/home/alta6/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "POST", "code": "200 OK", "uri": "/imgrecognizer?", "request": {}, "response": "SORRY, NO FOOD DETECTED!!!!"}
+[2019-12-21 18:04:24,194]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:82} WARNING - REQUEST_LOG	{"status_code": 404, "method": "GET", "code": "404 NOT FOUND", "uri": "/meal?", "request": {}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
+[2019-12-21 18:04:44,563]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /mealdb [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/mealdb/resources.py", line 19, in get
+    confidence = GetKemiripan.get()["confidence"]
+TypeError: get() missing 1 required positional argument: 'self'
+[2019-12-21 18:04:44,566]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/mealdb?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 18:07:22,921]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /mealdb [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/mealdb/resources.py", line 19, in get
+    confidence = GetKemiripan.get(self)["confidence"]
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/faceplus/resources.py", line 23, in get
+    rq = requests.post(self.url)
+AttributeError: 'Getmealdb' object has no attribute 'url'
+[2019-12-21 18:07:22,924]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/mealdb?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 18:11:06,275]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /mealdb [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/mealdb/resources.py", line 19, in get
+    print(GetKemiripan.get()["confidence"])
+TypeError: get() missing 1 required positional argument: 'self'
+[2019-12-21 18:11:06,277]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/mealdb?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 18:13:14,929]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /mealdb [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/mealdb/resources.py", line 19, in get
+    print(GetKemiripan.get()["confidence"])
+TypeError: get() missing 1 required positional argument: 'self'
+[2019-12-21 18:13:14,932]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/mealdb?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 18:13:19,825]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /mealdb [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/mealdb/resources.py", line 19, in get
+    print(GetKemiripan.get()["confidence"])
+TypeError: get() missing 1 required positional argument: 'self'
+[2019-12-21 18:13:19,826]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/mealdb?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 18:25:30,147]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/faceplus?", "request": {}, "response": {"confidence": 21.278}}
+[2019-12-21 18:26:56,355]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /mealdb [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/mealdb/resources.py", line 19, in get
+TypeError: get() missing 1 required positional argument: 'self'
+[2019-12-21 18:26:56,357]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/mealdb?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 18:29:37,925]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /mealdb [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/mealdb/resources.py", line 21, in get
+    confidence = GetKemiripan.get()["confidence"]
+TypeError: get() missing 1 required positional argument: 'self'
+[2019-12-21 18:29:37,928]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/mealdb?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 18:30:11,199]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/mealdb?", "request": {}, "response": {"meals": {"Name": "Bakewell tart", "Gambar": "https://www.themealdb.com/images/media/meals/wyrqqq1468233628.jpg"}}}
