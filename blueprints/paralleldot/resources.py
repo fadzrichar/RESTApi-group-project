@@ -27,6 +27,10 @@ class PostImgRecognizer(Resource):
         for data in datajson:
             if data['tag'] == 'Food':
                 return data
-        return "SORRY, NO FOOD DETECTED!!!!"
+        return {
+            'tag':'SORRY, NO FOOD DETECTED!!!!',
+            'score':0 
+        }
+        # return "SORRY, NO FOOD DETECTED!!!!"
 
 api.add_resource(PostImgRecognizer,'')

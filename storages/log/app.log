@@ -331,3 +331,36 @@ Traceback (most recent call last):
 TypeError: get() missing 1 required positional argument: 'self'
 [2019-12-21 18:29:37,928]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/mealdb?", "request": {}, "response": {"message": "Internal Server Error"}}
 [2019-12-21 18:30:11,199]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/mealdb?", "request": {}, "response": {"meals": {"Name": "Bakewell tart", "Gambar": "https://www.themealdb.com/images/media/meals/wyrqqq1468233628.jpg"}}}
+[2019-12-21 19:15:06,323]{/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /promo [GET]
+Traceback (most recent call last):
+  File "/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta6/RESTApi-group-project/blueprints/promo/resources.py", line 21, in get
+    caption = caption.split(' ')
+UnboundLocalError: local variable 'caption' referenced before assignment
+[2019-12-21 19:15:06,326]{/home/alta6/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/promo?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 19:16:09,685]{/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /promo [GET]
+Traceback (most recent call last):
+  File "/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta6/Alta Fadzri's file/coba_RESTful/flaskenv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta6/RESTApi-group-project/blueprints/promo/resources.py", line 21, in get
+    words = caption.split(' ')
+NameError: name 'caption' is not defined
+[2019-12-21 19:16:09,689]{/home/alta6/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/promo?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 19:17:29,170]{/home/alta6/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": "Caption tidak memenuhi ketentuan"}

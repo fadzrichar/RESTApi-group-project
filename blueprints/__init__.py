@@ -13,9 +13,9 @@ app.config['APP_DEBUG'] = True
 try:
     env = os.environ.get('FLASK_ENV', 'development')
     if env == 'testing':
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@0.0.0.0:3306/db_rest_api'
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:alta123@0.0.0.0:3306/rest_training_test'
     else:
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@0.0.0.0:3306/db_test_rest_api'
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:alta123@0.0.0.0:3306/rest_training'
 except Exception as e:
     raise e
 
@@ -107,6 +107,7 @@ from blueprints.faceplus.resources import bp_faceplus
 from blueprints.client.resources import bp_client
 from blueprints.auth import bp_auth
 from blueprints.paralleldot.resources import bp_paralleldot
+from blueprints.promo.resources import bp_promo
 
 app.register_blueprint(bp_instagram, url_prefix='/instagram')
 app.register_blueprint(bp_faceplus, url_prefix='/faceplus')
@@ -114,5 +115,6 @@ app.register_blueprint(bp_mealdb, url_prefix='/mealdb')
 app.register_blueprint(bp_client, url_prefix='/client')
 app.register_blueprint(bp_auth, url_prefix='/token')
 app.register_blueprint(bp_paralleldot, url_prefix='/imgrecognizer')
+app.register_blueprint(bp_promo, url_prefix='/promo')
 
 db.create_all()
