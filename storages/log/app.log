@@ -214,3 +214,234 @@ KeyError: 'confidence'
 [2019-12-21 16:59:35,263]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/faceplus?", "request": {}, "response": {"message": "Internal Server Error"}}
 [2019-12-21 17:00:16,769]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/faceplus?", "request": {}, "response": {"confidence": 21.28}}
 [2019-12-21 17:05:25,294]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9jezE1&oh=fc072ffe40c35123812215871383404e&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-21 18:32:33,296]{/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /faceplus [GET]
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/faceplus/resources.py", line 25, in get
+    confidence = content["confidence"]
+KeyError: 'confidence'
+[2019-12-21 18:32:33,299]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/faceplus?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 18:33:02,941]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/faceplus?", "request": {}, "response": {"confidence": 21.28}}
+[2019-12-21 18:33:23,450]{/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /faceplus [GET]
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/faceplus/resources.py", line 25, in get
+    confidence = content["confidence"]
+KeyError: 'confidence'
+[2019-12-21 18:33:23,452]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/faceplus?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 18:41:39,846]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9jezE1&oh=fc072ffe40c35123812215871383404e&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-21 19:29:04,485]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9jezE1&oh=fc072ffe40c35123812215871383404e&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-21 20:22:35,854]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 405, "method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/instagram?", "request": {}, "response": {"message": "The method is not allowed for the requested URL."}}
+[2019-12-21 20:22:42,654]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9jezE1&oh=fc072ffe40c35123812215871383404e&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-21 20:23:14,278]{/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /faceplus [GET]
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/faceplus/resources.py", line 25, in get
+    confidence = content["confidence"]
+KeyError: 'confidence'
+[2019-12-21 20:23:14,280]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/faceplus?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 20:23:35,981]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/faceplus?", "request": {}, "response": {"confidence": 21.28}}
+[2019-12-21 20:42:47,524]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/faceplus?", "request": {}, "response": {"confidence": 21.28}}
+[2019-12-21 21:04:23,125]{/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /faceplus [GET]
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/faceplus/resources.py", line 27, in get
+    content = rq.json()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-12-21 21:04:23,132]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/faceplus?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 21:38:10,302]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:82} WARNING - REQUEST_LOG	{"status_code": 404, "method": "GET", "code": "404 NOT FOUND", "uri": "/}/faceplus?", "request": {}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
+[2019-12-21 21:39:00,596]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:82} WARNING - REQUEST_LOG	{"status_code": 404, "method": "GET", "code": "404 NOT FOUND", "uri": "/}/faceplus?", "request": {}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
+[2019-12-21 21:39:13,185]{/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /faceplus [GET]
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.6/http/client.py", line 1346, in getresponse
+    response.begin()
+  File "/usr/lib/python3.6/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.6/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.6/ssl.py", line 1012, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/urllib3/util/retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/urllib3/packages/six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.6/http/client.py", line 1346, in getresponse
+    response.begin()
+  File "/usr/lib/python3.6/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.6/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.6/ssl.py", line 1012, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/faceplus/resources.py", line 26, in get
+    rq = requests.post(self.url2)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+[2019-12-21 21:39:13,198]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/faceplus?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 21:40:31,789]{/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /faceplus [GET]
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/faceplus/resources.py", line 27, in get
+    content = rq.json()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-12-21 21:40:31,791]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/faceplus?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 21:42:41,328]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/68842936_1001258380230151_6138644861286416599_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=_S-ERHBzCSYAX_NOYXZ&oh=a55ca65a5b8033c57e46dced3efe5e30&oe=5E98C075", "caption": "You cannot see the light without the darkness.\nThe beauty of light dwells in the heart of darkness.\nEven stars cannot shine without the darkness, right?\nWe all are lost stars just tryin to light up the dark.\n\nDear my light,\nThank you for being my light in my darkest times.\n\n#lightpainting #lightpaintingindonesia #lightpaintingphotography #lightpaintingworld #lightpaintingart"}}
+[2019-12-21 21:52:24,776]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/68842936_1001258380230151_6138644861286416599_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=_S-ERHBzCSYAX_NOYXZ&oh=a55ca65a5b8033c57e46dced3efe5e30&oe=5E98C075", "caption": "You cannot see the light without the darkness.\nThe beauty of light dwells in the heart of darkness.\nEven stars cannot shine without the darkness, right?\nWe all are lost stars just tryin to light up the dark.\n\nDear my light,\nThank you for being my light in my darkest times.\n\n#lightpainting #lightpaintingindonesia #lightpaintingphotography #lightpaintingworld #lightpaintingart"}}
+[2019-12-21 21:53:01,708]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/68842936_1001258380230151_6138644861286416599_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=_S-ERHBzCSYAX_NOYXZ&oh=a55ca65a5b8033c57e46dced3efe5e30&oe=5E98C075", "caption": "You cannot see the light without the darkness.\nThe beauty of light dwells in the heart of darkness.\nEven stars cannot shine without the darkness, right?\nWe all are lost stars just tryin to light up the dark.\n\nDear my light,\nThank you for being my light in my darkest times.\n\n#lightpainting #lightpaintingindonesia #lightpaintingphotography #lightpaintingworld #lightpaintingart"}}
+[2019-12-21 21:53:37,641]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/13561763_1786101431669375_1462932704_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=qmWdQvGYYe8AX8ZwDmK&oh=c4a750f6218a3ea6dd704a9ea6c008cb&oe=5EB03439", "caption": "We are Ronin"}}
+[2019-12-21 21:54:20,879]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9jezE1&oh=fc072ffe40c35123812215871383404e&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-21 23:24:54,601]{/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /faceplus [GET]
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/faceplus/resources.py", line 26, in get
+    rq = requests.post(self.url2, files={'image_file2': instagram_foto})
+NameError: name 'instagram_foto' is not defined
+[2019-12-21 23:24:54,603]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/faceplus?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 23:26:41,820]{/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /faceplus [GET]
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/faceplus/resources.py", line 27, in get
+    rq = requests.post(self.url2, files={'image_file2': instagram_foto})
+NameError: name 'instagram_foto' is not defined
+[2019-12-21 23:26:41,823]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/faceplus?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-21 23:27:20,639]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/faceplus?", "request": {}, "response": {"confidence": 22.332}}
+[2019-12-21 23:31:06,692]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/faceplus?", "request": {}, "response": {"confidence": 22.332}}
+[2019-12-21 23:31:26,225]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/faceplus?", "request": {}, "response": {"confidence": 92.438}}

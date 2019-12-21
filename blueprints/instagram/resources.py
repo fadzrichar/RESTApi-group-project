@@ -1,6 +1,7 @@
-import requests
+import requests, base64
 from flask import Blueprint
 from flask_restful import Api, reqparse, Resource
+import urllib.request as req
 
 bp_instagram = Blueprint('instagram', __name__)
 api = Api(bp_instagram)
@@ -20,5 +21,16 @@ class GetFotoandCaption(Resource):
             'foto' : foto,
             'caption' : caption
         }
+
+class ConvertFoto(Resource):
+    
+    def foto(self):
+        instagram_foto = GetFotoandCaption().get()['foto']
+        req.urlretrieve(instagram_foto, 'foto.jpg')
+
+        with open('foto.jpg', 'rb') as imageFile:
+            foto_byte = imageFile.read()
+        return foto_byte
+
 
 api.add_resource(GetFotoandCaption, '')
