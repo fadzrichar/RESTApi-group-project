@@ -102,7 +102,9 @@ def after_request(response):
 #####################
 
 from blueprints.mealdb.resources import bp_mealdb
+from blueprints.client.resources import bp_client
 
 app.register_blueprint(bp_mealdb, url_prefix='/mealdb')
+app.register_blueprint(bp_client, url_prefix='/client')
 
 db.create_all()
