@@ -101,17 +101,17 @@ def after_request(response):
 # IMPORT BLUEPRINTS #
 #####################
 from blueprints.client.resources import bp_client
-from blueprints.book.resources import bp_book
-from blueprints.user.resources import bp_user
-from blueprints.rent.resources import bp_rent
+# from blueprints.book.resources import bp_book
+# from blueprints.user.resources import bp_user
+# from blueprints.rent.resources import bp_rent
 from blueprints.auth import bp_auth
-from blueprints.weather.resources import bp_weather
+from blueprints.paralleldot.resources import bp_paralleldot
 
 app.register_blueprint(bp_client, url_prefix='/client')
-app.register_blueprint(bp_book, url_prefix='/book')
-app.register_blueprint(bp_user, url_prefix='/user')
-app.register_blueprint(bp_rent, url_prefix='/rent')
+# app.register_blueprint(bp_book, url_prefix='/book')
+# app.register_blueprint(bp_user, url_prefix='/user')
+# app.register_blueprint(bp_rent, url_prefix='/rent')
 app.register_blueprint(bp_auth, url_prefix='/token')
-app.register_blueprint(bp_weather, url_prefix='/weather')
+app.register_blueprint(bp_paralleldot, url_prefix='/imgrecognizer')
 
 db.create_all()
