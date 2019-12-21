@@ -31,6 +31,5 @@ class PostImgRecognizer(Resource):
             'tag':'SORRY, NO FOOD DETECTED!!!!',
             'score':0 
         }
-        # return "SORRY, NO FOOD DETECTED!!!!"
 
 api.add_resource(PostImgRecognizer,'')
