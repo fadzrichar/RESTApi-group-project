@@ -20,7 +20,7 @@ if __name__ == "__main__":
         # define log format and create a rotating log with max size and max backup to 10 files
         logging.getLogger().setLevel('INFO')
         formatter = logging.Formatter("[%(asctime)s]{%(pathname)s:%(lineno)d} %(levelname)s - %(message)s")
-        log_handler = RotatingFileHandler("%s/%s" %(app.root_path, '../storage/log/app.log'),maxBytes=1000000, backupCount=10)
+        log_handler = RotatingFileHandler("%s/%s" %(app.root_path, '../storages/log/app.log'),maxBytes=1000000, backupCount=10)
         log_handler.setFormatter(formatter)
         app.logger.addHandler(log_handler)
 

@@ -102,7 +102,17 @@ def after_request(response):
 #####################
 
 from blueprints.mealdb.resources import bp_mealdb
+from blueprints.instagram.resources import bp_instagram
+from blueprints.faceplus.resources import bp_faceplus
+from blueprints.client.resources import bp_client
+from blueprints.auth import bp_auth
+from blueprints.paralleldot.resources import bp_paralleldot
 
+app.register_blueprint(bp_instagram, url_prefix='/instagram')
+app.register_blueprint(bp_faceplus, url_prefix='/faceplus')
 app.register_blueprint(bp_mealdb, url_prefix='/mealdb')
+app.register_blueprint(bp_client, url_prefix='/client')
+app.register_blueprint(bp_auth, url_prefix='/token')
+app.register_blueprint(bp_paralleldot, url_prefix='/imgrecognizer')
 
 db.create_all()
