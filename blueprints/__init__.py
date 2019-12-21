@@ -102,8 +102,10 @@ def after_request(response):
 #####################
 
 from blueprints.instagram.resources import bp_instagram
+from blueprints.faceplus.resources import bp_faceplus
 
 app.register_blueprint(bp_instagram, url_prefix='/instagram')
+app.register_blueprint(bp_faceplus, url_prefix='/faceplus')
 
 
 db.create_all()
