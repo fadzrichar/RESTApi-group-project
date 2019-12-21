@@ -13,9 +13,9 @@ app.config['APP_DEBUG'] = True
 try:
     env = os.environ.get('FLASK_ENV', 'development')
     if env == 'testing':
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:alta123@0.0.0.0:3306/rest_training_test'
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@0.0.0.0:3306/db_rest_api'
     else:
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:alta123@0.0.0.0:3306/rest_training'
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@0.0.0.0:3306/db_test_rest_api'
 except Exception as e:
     raise e
 
@@ -100,18 +100,9 @@ def after_request(response):
 #####################
 # IMPORT BLUEPRINTS #
 #####################
-from blueprints.client.resources import bp_client
-from blueprints.book.resources import bp_book
-from blueprints.user.resources import bp_user
-from blueprints.rent.resources import bp_rent
-from blueprints.auth import bp_auth
-from blueprints.weather.resources import bp_weather
 
-app.register_blueprint(bp_client, url_prefix='/client')
-app.register_blueprint(bp_book, url_prefix='/book')
-app.register_blueprint(bp_user, url_prefix='/user')
-app.register_blueprint(bp_rent, url_prefix='/rent')
-app.register_blueprint(bp_auth, url_prefix='/token')
-app.register_blueprint(bp_weather, url_prefix='/weather')
+from blueprints.mealdb.resources import bp_mealdb
+
+app.register_blueprint(bp_mealdb, url_prefix='/mealdb')
 
 db.create_all()
