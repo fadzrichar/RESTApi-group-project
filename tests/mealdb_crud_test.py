@@ -17,23 +17,16 @@ class TestMockMealdb():
 			if args[0] == "https://www.themealdb.com/api/json/v1/1/search.php?f=a":
 				return MockResponse({
 							"meals": [{
-                                "strMeal"       : "Ayam Geprek",
-                                "strMealThumb"  : "https://www.themealdb.com/images/media/meals/wyrqqq1468233628.jpg"
-                            }]
+								"strMeal"       : "Ayam Geprek",
+								"strMealThumb"  : "https://www.themealdb.com/images/media/meals/wyrqqq1468233628.jpg"
+							}]
 						}, 200)
 		else:
 			return MockResponse(None, 404)
 
-	# @patch.object(PublicGetCurrentWeather,'get')
-	@mock.patch('requests.get',side_effect=mocked_requests_get)
+	@mock.patch('requests.get', side_effect = mocked_requests_get)
 	def test_meal(self, test_reqget_mock, client):
-		# token = create_token(True)
 
-		data = {
-            "f":"a"
-        }
-		res = client.get('/mealdb',query_string= data)
-
-		res_json = json.loads(res.data)
-
+		res = client.get('/mealdb')
+		
 		assert res.status_code == 200
