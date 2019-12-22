@@ -12,8 +12,9 @@ class TestClientCrud():
         token = create_token(True)
 
         data = {
-            "client_key": "CLIENT02",
-            "client_secret": "SECRET02",
+            "client_key": "CLIENT03",
+            "client_secret": "SECRET01",
+            "token_instagram": "1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe",
             "status":True
         }
 
@@ -54,6 +55,7 @@ class TestClientCrud():
         data = {
             "client_key": "CLIENT02",
             "client_secret": "SECRET02",
+            "token_instagram": "1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe",
             "status": False
         }
 
@@ -73,6 +75,7 @@ class TestClientCrud():
         data = {
             "client_key": "CLIENT02",
             "client_secret": "SECRET02",
+            "token_instagram": "1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe",
             "status": True
         }
 
@@ -88,6 +91,7 @@ class TestClientCrud():
         data = {
             "client_key": "CLIENT02",
             "client_secret": "SECRET02",
+            "token_instagram": "1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe",
             "status": True
         }
 
