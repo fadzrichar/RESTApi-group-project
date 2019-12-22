@@ -16,7 +16,6 @@ api = Api(bp_promo)
 class Promotion(Resource):
 
     @jwt_required
-    @internal_required
     def get(self):
         score = PostImgRecognizer().post()['score']
         caption = GetFotoandCaption().get()['caption']
@@ -49,7 +48,7 @@ class Promotion(Resource):
                     'Gambar'    :pict
                 }
             else:
-                return "Maaf, gambar yang anda post tidak memenuhi kebetuhan"
+                return "Maaf, gambar yang anda post tidak memenuhi ketentuan(Tidak terdapat gambar makanan)"
         else:
             return "Caption tidak memenuhi ketentuan"
           

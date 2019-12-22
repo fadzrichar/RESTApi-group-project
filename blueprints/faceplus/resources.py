@@ -20,7 +20,6 @@ class GetKemiripan(Resource):
     url2 = host+'api_key='+api_key+'&api_secret='+api_secret+'&image_url1='+image_url1
 
     @jwt_required
-    @internal_required
     def get(self):
         instagram_foto = ConvertFoto()
         instagram_foto = instagram_foto.foto()

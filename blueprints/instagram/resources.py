@@ -14,7 +14,7 @@ class GetFotoandCaption(Resource):
     # token = '1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe'
     
     @jwt_required
-    @internal_required
+  
     def get(self):
         claim = get_jwt_claims()
         print(claim)
@@ -34,7 +34,6 @@ class GetFotoandCaption(Resource):
 class ConvertFoto(Resource):
     
     @jwt_required
-    @internal_required
     def foto(self):
         instagram_foto = GetFotoandCaption().get()['foto']
         req.urlretrieve(instagram_foto, 'foto.jpg')
