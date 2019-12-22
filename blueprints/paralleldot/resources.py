@@ -3,6 +3,7 @@ from flask import Blueprint
 from flask_restful import Api, reqparse, Resource
 from flask_jwt_extended import jwt_required
 from blueprints.instagram.resources import GetFotoandCaption
+from blueprints import internal_required
 
 bp_paralleldot = Blueprint('paralleldot', __name__)
 api = Api(bp_paralleldot)
@@ -11,7 +12,8 @@ class PostImgRecognizer(Resource):
     parallel_host = 'https://apis.paralleldots.com/v4/object_recognizer'
     parallel_apikey = 'm6GGf7N7VXvUejnSd8XP0NUzq8KRyxkgZCm2Nz730Vg'
 
-    # @jwt_required
+    @jwt_required
+
     def post(self):
         # parser = reqparse.RequestParser()
         # parser.add_argument('url', location='json', default=None)

@@ -4,6 +4,7 @@ from flask_restful import Api, reqparse, Resource
 from flask_jwt_extended import jwt_required
 from blueprints.faceplus.resources import GetKemiripan
 from blueprints.instagram.resources import GetFotoandCaption
+from blueprints import internal_required
 
 bp_mealdb = Blueprint('mealdb', __name__)
 api = Api(bp_mealdb)
@@ -15,6 +16,8 @@ class Getmealdb(Resource):
     def __init__(self):
         pass
 
+    @jwt_required
+    # @internal_required
     def get(self):
 
         confidence = GetKemiripan().get()["confidence"]

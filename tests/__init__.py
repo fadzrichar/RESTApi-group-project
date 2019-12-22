@@ -9,7 +9,7 @@ def reset_db():
     db.drop_all()
     db.create_all()
 
-    data_client = Clients("CLIENT01", "c1955d22ee05fe485b17369342225129", True)
+    data_client = Clients("CLIENT01", "c1955d22ee05fe485b17369342225129", True, '1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe')
     db.session.add(data_client)
     db.session.commit()
     
@@ -26,7 +26,7 @@ def create_token(isinternal=False):
         cachename = 'test-internal-token'
         data = {
             "client_key":"internal",
-            "client_secret":"th1s1s1nt3n4lcl13nt"
+            "client_secret":"internal123"
         }
     else:
         cachename = 'test-token'

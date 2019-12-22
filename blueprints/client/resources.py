@@ -32,18 +32,19 @@ class ClientResource(Resource):
             return marshal(qry, Clients.response_fields), 200
         return {'status':'NOT_FOUND'}, 404
 
+    @jwt_required
+    @internal_required
     def post(self):
-
         policy = PasswordPolicy.from_names(
             length = 6,
             # uppercase = 2,
             # numbers = 1,
             # special = 2
         )
-
         parser = reqparse.RequestParser()
         parser.add_argument('client_key', location = 'args', required = True)
         parser.add_argument('client_secret', location = 'args', required = True)
+        parser.add_argument('token_instagram', location = 'args', required = True)
         parser.add_argument('status', type=inputs.boolean, location = 'args', required = True)
         args = parser.parse_args()
 
@@ -54,7 +55,7 @@ class ClientResource(Resource):
 
             # client = Clients(datetime.datetime.now(),args['client_key'], password_digest)
 
-            client = Clients(args['client_key'], password_digest, args['status'])
+            client = Clients(args['client_key'], password_digest, args['status'], args['token_instagram'])
             db.session.add(client)
             db.session.commit()
 
