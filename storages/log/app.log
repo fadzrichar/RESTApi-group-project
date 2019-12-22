@@ -7,3 +7,240 @@
 [2019-12-21 23:50:50,732]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": "Caption tidak memenuhi ketentuan"}
 [2019-12-21 23:51:13,135]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": {"Makanan": "Apple Frangipan Tart", "Diskon": "50%", "Gambar": "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg"}}
 [2019-12-21 23:56:56,616]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": "Caption tidak memenuhi ketentuan"}
+[2019-12-22 14:35:39,115]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9oj8Pr&oh=f1a5d4364cc241ce27e4ca906f945b97&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-22 14:36:33,000]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": "Caption tidak memenuhi ketentuan"}
+[2019-12-22 14:39:08,230]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /client [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 107, in wrapper
+    verify_jwt_in_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
+    jwt_data, jwt_header = _decode_jwt_from_request(request_type='access')
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 314, in _decode_jwt_from_request
+    raise NoAuthorizationError(errors[0])
+flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
+[2019-12-22 14:39:08,234]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/client?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-22 14:39:53,140]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /client [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 107, in wrapper
+    verify_jwt_in_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
+    jwt_data, jwt_header = _decode_jwt_from_request(request_type='access')
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 314, in _decode_jwt_from_request
+    raise NoAuthorizationError(errors[0])
+flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
+[2019-12-22 14:39:53,142]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/client?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-22 14:40:16,070]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /client [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1246, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'Client.token_instagram' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/client/resources.py", line 154, in get
+    for row in qry.limit(args['rp']).offset(offset).all():
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3211, in all
+    return list(self)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1101, in _execute_clauseelement
+    distilled_params,
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1250, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1246, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.InternalError: (pymysql.err.InternalError) (1054, "Unknown column 'Client.token_instagram' in 'field list'")
+[SQL: SELECT `Client`.id AS `Client_id`, `Client`.client_key AS `Client_client_key`, `Client`.client_secret AS `Client_client_secret`, `Client`.token_instagram AS `Client_token_instagram`, `Client`.status AS `Client_status`, `Client`.created_at AS `Client_created_at`, `Client`.update_at AS `Client_update_at`, `Client`.deleted AS `Client_deleted` 
+FROM `Client` 
+ LIMIT %(param_1)s, %(param_2)s]
+[parameters: {'param_1': 0, 'param_2': 25}]
+(Background on this error at: http://sqlalche.me/e/2j85)
+[2019-12-22 14:40:16,087]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/client?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-22 14:42:27,204]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /client [POST]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1246, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'token_instagram' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/client/resources.py", line 59, in post
+    db.session.commit()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1036, in commit
+    self.transaction.commit()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 503, in commit
+    self._prepare_impl()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 482, in _prepare_impl
+    self.session.flush()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2479, in flush
+    self._flush(objects)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2617, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 153, in reraise
+    raise value
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2577, in _flush
+    flush_context.execute()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1137, in _emit_insert_statements
+    statement, params
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1101, in _execute_clauseelement
+    distilled_params,
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1250, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1246, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.InternalError: (pymysql.err.InternalError) (1054, "Unknown column 'token_instagram' in 'field list'")
+[SQL: INSERT INTO `Client` (client_key, client_secret, token_instagram, status, created_at, update_at, deleted) VALUES (%(client_key)s, %(client_secret)s, %(token_instagram)s, %(status)s, %(created_at)s, %(update_at)s, %(deleted)s)]
+[parameters: {'client_key': 'CLIENT01', 'client_secret': 'c1955d22ee05fe485b17369342225129', 'token_instagram': '1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe', 'status': 0, 'created_at': datetime.datetime(2019, 12, 22, 14, 40, 1, 240114), 'update_at': None, 'deleted': 0}]
+(Background on this error at: http://sqlalche.me/e/2j85)
+[2019-12-22 14:42:27,216]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/client?client_key=CLIENT01&client_secret=SECRET01&token_instagram=1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe&status=False", "request": {"client_key": "CLIENT01", "client_secret": "SECRET01", "token_instagram": "1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe", "status": "False"}, "response": {"message": "Internal Server Error"}}
+[2019-12-22 14:44:26,723]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "POST", "code": "200 OK", "uri": "/client?client_key=CLIENT01&client_secret=SECRET01&token_instagram=1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe&status=False", "request": {"client_key": "CLIENT01", "client_secret": "SECRET01", "token_instagram": "1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe", "status": "False"}, "response": {"created_at": "Sun, 22 Dec 2019 14:44:09 -0000", "updated_at": null, "deleted": false, "id": 1, "client_key": "CLIENT01", "client_secret": "c1955d22ee05fe485b17369342225129", "token_instagram": "1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe", "status": false}}
+[2019-12-22 14:45:49,962]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9oj8Pr&oh=f1a5d4364cc241ce27e4ca906f945b97&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-22 14:46:51,599]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/token?client_key=CLIENT01&client_secret=SECRET01", "request": {"client_key": "CLIENT01", "client_secret": "SECRET01"}, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzcwMDA4MTEsIm5iZiI6MTU3NzAwMDgxMSwianRpIjoiNjU0NGU2YjktMDE0Mi00YmFkLWFkMzgtYTc4NjVkMjIyZjU0IiwiZXhwIjoxNTc3MDg3MjExLCJpZGVudGl0eSI6IkNMSUVOVDAxIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiY2xpZW50X2tleSI6IkNMSUVOVDAxIiwic3RhdHVzIjpmYWxzZSwidG9rZW5faW5zdGFncmFtIjoiMTQ5MDI2NjA5OS4xNjc3ZWQwLjEwNjgxYTZhYTkyNzRlMzg4NDU4ZTg5ZDk1ZWM3ZmZlIiwiaXNpbnRlcm5hbCI6ZmFsc2V9fQ.9dY1k3KU4XaDqdP2iSxbkwYuihQPDdDojfZvyxiSeG8"}}
+[2019-12-22 14:47:17,007]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9oj8Pr&oh=f1a5d4364cc241ce27e4ca906f945b97&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-22 14:48:35,669]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": "Caption tidak memenuhi ketentuan"}

@@ -25,7 +25,7 @@ class ClientResource(Resource):
         pass
     
     @jwt_required
-    @internal_required
+    # @internal_required
     def get(self, id):
         qry = Clients.query.get(id)
         if qry is not None and qry.deleted == False:
@@ -33,6 +33,7 @@ class ClientResource(Resource):
         return {'status':'NOT_FOUND'}, 404
 
     @jwt_required
+    @internal_required
     def post(self):
         policy = PasswordPolicy.from_names(
             length = 6,
@@ -61,8 +62,8 @@ class ClientResource(Resource):
             app.logger.debug('DEBUG : %s', client)
             return marshal(client, Clients.response_fields), 200, {'Content-Type' : 'application/json' }
     
-    @jwt_required
-    @internal_required
+    # @jwt_required
+    # @internal_required
     def put(self, id):
 
         policy = PasswordPolicy.from_names(
@@ -95,8 +96,8 @@ class ClientResource(Resource):
 
         return marshal(qry, Clients.response_fields), 200, {'Content-Type' : 'application/json' }
 
-    @jwt_required
-    @internal_required
+    # @jwt_required
+    # @internal_required
     def delete(self,id):
         qry = Clients.query.get(id)
 
@@ -112,8 +113,8 @@ class ClientResource(Resource):
         db.session.commit()
         return {'status':'Deleted'}, 200
 
-    @jwt_required
-    @internal_required
+    # @jwt_required
+    # @internal_required
     def patch(self):
         return 'Not yet implement', 501
 

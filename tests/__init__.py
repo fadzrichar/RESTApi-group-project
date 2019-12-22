@@ -26,7 +26,7 @@ def create_token(isinternal=False):
         cachename = 'test-internal-token'
         data = {
             "client_key":"internal",
-            "client_secret":"th1s1s1nt3n4lcl13nt"
+            "client_secret":"internal123"
         }
     else:
         cachename = 'test-token'

@@ -13,8 +13,7 @@ class PostImgRecognizer(Resource):
     parallel_apikey = 'm6GGf7N7VXvUejnSd8XP0NUzq8KRyxkgZCm2Nz730Vg'
 
     # @jwt_required
-    @jwt_required
-    @internal_required
+    # @internal_required
     def post(self):
         # parser = reqparse.RequestParser()
         # parser.add_argument('url', location='json', default=None)

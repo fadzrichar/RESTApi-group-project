@@ -16,8 +16,8 @@ class Getmealdb(Resource):
     def __init__(self):
         pass
 
-    @jwt_required
-    @internal_required
+    # @jwt_required
+    # @internal_required
     def get(self):
 
         confidence = GetKemiripan().get()["confidence"]

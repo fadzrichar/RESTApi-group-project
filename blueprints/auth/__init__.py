@@ -24,7 +24,7 @@ class CreateTokenResource(Resource):
         
         client_secret = hashlib.md5(args['client_secret'].encode()).hexdigest()
 
-        if args['client_key'] == 'internal' and args['client_secret'] == 'th1s1s1nt3n4lcl13nt':
+        if args['client_key'] == 'internal' and args['client_secret'] == 'internal123':
             token= create_access_token(identity = args['client_key'], user_claims = {'isinternal':True})
             return {'token':token}, 200
 

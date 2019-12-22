@@ -18,9 +18,9 @@ class GetFotoandCaption(Resource):
     def get(self):
         claim = get_jwt_claims()
         token = claim['instagram_token']
-        url = self.host+token+'&count=1'
+        url = self.host+self.token+'&count=1'
 
-        rq = requests.get(self.url)
+        rq = requests.get(url)
         content = rq.json()
         foto = content['data'][0]['images']['standard_resolution']['url']
         caption = content['data'][0]['caption']['text']
