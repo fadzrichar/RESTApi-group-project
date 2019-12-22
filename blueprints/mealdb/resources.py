@@ -3,7 +3,6 @@ from flask import Blueprint
 from flask_restful import Api, reqparse, Resource
 from flask_jwt_extended import jwt_required
 from blueprints.faceplus.resources import GetKemiripan
-from blueprints.instagram.resources import GetFotoandCaption
 from blueprints import internal_required
 
 bp_mealdb = Blueprint('mealdb', __name__)
