@@ -16,9 +16,13 @@ class TestMockParalleldot():
 		if len(args) > 0:
 			if args[0] == "https://apis.paralleldots.com/v4/object_recognizer":
 				return MockResponse({
-                    'tag':'Food',
-                    'score':0.5 
-                }, 200)
+				"output": [
+						{
+							"tag": "Food",
+							"score": 0.3
+						}
+					]
+				}, 200)
 		else:
 			return MockResponse(None, 404)
 
@@ -26,11 +30,15 @@ class TestMockParalleldot():
 	def test_paralleldot(self, test_reqget_mock, client):
 		token = create_token(True)
 
-		data ={
-                'api_key':'jajdgasjbcjasvjdask',
-                'url':'askjasdjak'
-        }
-		res = client.post('/imgrecognizer',json=data,
+		# data ={
+		# 		"output": [
+		# 				{
+		# 					"tag": "Food",
+		# 					"score": 0.3
+		# 				}
+		# 			]
+		# 		}
+		res = client.post('/imgrecognizer',
 		headers={'Authorization': 'Bearer ' + token})
 
 		res_json = json.loads(res.data)
