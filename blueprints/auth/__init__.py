@@ -25,8 +25,16 @@ class CreateTokenResource(Resource):
         client_secret = hashlib.md5(args['client_secret'].encode()).hexdigest()
 
         if args['client_key'] == 'internal' and args['client_secret'] == 'internal123':
-            token= create_access_token(identity = args['client_key'], user_claims = {'isinternal':True})
-            return {'token':token}, 200
+            qry = Clients.query.filter_by(client_key = args['client_key']).filter_by(client_secret = client_secret)
+            clientData = qry.first()
+            
+            if clientData is not None:
+                clientData = marshal(clientData, Clients.jwt_claims_fields)
+                clientData['isinternal'] = True
+                token= create_access_token(identity = args['client_key'], user_claims = clientData)
+                return {'token':token}, 200
+            else:
+                return {'status':'UNAUTHORIZED', 'message': 'invalid key or secret'}, 401
 
         else :
             qry = Clients.query.filter_by(client_key = args['client_key']).filter_by(client_secret = client_secret)

@@ -244,3 +244,96 @@ sqlalchemy.exc.InternalError: (pymysql.err.InternalError) (1054, "Unknown column
 [2019-12-22 14:46:51,599]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/token?client_key=CLIENT01&client_secret=SECRET01", "request": {"client_key": "CLIENT01", "client_secret": "SECRET01"}, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzcwMDA4MTEsIm5iZiI6MTU3NzAwMDgxMSwianRpIjoiNjU0NGU2YjktMDE0Mi00YmFkLWFkMzgtYTc4NjVkMjIyZjU0IiwiZXhwIjoxNTc3MDg3MjExLCJpZGVudGl0eSI6IkNMSUVOVDAxIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiY2xpZW50X2tleSI6IkNMSUVOVDAxIiwic3RhdHVzIjpmYWxzZSwidG9rZW5faW5zdGFncmFtIjoiMTQ5MDI2NjA5OS4xNjc3ZWQwLjEwNjgxYTZhYTkyNzRlMzg4NDU4ZTg5ZDk1ZWM3ZmZlIiwiaXNpbnRlcm5hbCI6ZmFsc2V9fQ.9dY1k3KU4XaDqdP2iSxbkwYuihQPDdDojfZvyxiSeG8"}}
 [2019-12-22 14:47:17,007]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9oj8Pr&oh=f1a5d4364cc241ce27e4ca906f945b97&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
 [2019-12-22 14:48:35,669]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": "Caption tidak memenuhi ketentuan"}
+[2019-12-22 15:05:33,889]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9oj8Pr&oh=f1a5d4364cc241ce27e4ca906f945b97&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-22 15:05:50,169]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9oj8Pr&oh=f1a5d4364cc241ce27e4ca906f945b97&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-22 15:05:52,626]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9oj8Pr&oh=f1a5d4364cc241ce27e4ca906f945b97&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-22 15:08:05,337]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9oj8Pr&oh=f1a5d4364cc241ce27e4ca906f945b97&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-22 15:09:03,806]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/token?client_key=internal&client_secret=internal123", "request": {"client_key": "internal", "client_secret": "internal123"}, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzcwMDIxNDMsIm5iZiI6MTU3NzAwMjE0MywianRpIjoiZTc1ZmYzNjMtMzhmMS00MDZhLTkzOTctNTdiNTQ5ZTUzMGE1IiwiZXhwIjoxNTc3MDg4NTQzLCJpZGVudGl0eSI6ImludGVybmFsIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaXNpbnRlcm5hbCI6dHJ1ZX19.xQwuwxj415zd1EeMyKvcbAYPnh4bsomg6zYTgqX5Sco"}}
+[2019-12-22 15:12:56,842]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "POST", "code": "200 OK", "uri": "/client?client_key=internal&client_secret=internal123&token_instagram=1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe&status=True", "request": {"client_key": "internal", "client_secret": "internal123", "token_instagram": "1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe", "status": "True"}, "response": {"created_at": "Sun, 22 Dec 2019 15:07:50 -0000", "updated_at": null, "deleted": false, "id": 2, "client_key": "internal", "client_secret": "24f8581e79dde8c0f1768968accbca28", "token_instagram": "1490266099.1677ed0.10681a6aa9274e388458e89d95ec7ffe", "status": true}}
+[2019-12-22 15:13:35,494]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9oj8Pr&oh=f1a5d4364cc241ce27e4ca906f945b97&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-22 15:13:48,173]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/faceplus?", "request": {}, "response": {"confidence": 22.332}}
+[2019-12-22 15:24:37,103]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9oj8Pr&oh=f1a5d4364cc241ce27e4ca906f945b97&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}
+[2019-12-22 15:48:29,744]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /instagram [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 107, in wrapper
+    verify_jwt_in_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
+    jwt_data, jwt_header = _decode_jwt_from_request(request_type='access')
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 314, in _decode_jwt_from_request
+    raise NoAuthorizationError(errors[0])
+flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
+[2019-12-22 15:48:29,747]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/instagram?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-22 15:49:05,929]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/token?client_key=internal&client_secret=internal123", "request": {"client_key": "internal", "client_secret": "internal123"}, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzcwMDQ1NDUsIm5iZiI6MTU3NzAwNDU0NSwianRpIjoiNzgwMGNiMWYtZWU4My00MmI5LTgzNGUtMDc0NjY2YWRiNzE0IiwiZXhwIjoxNTc3MDkwOTQ1LCJpZGVudGl0eSI6ImludGVybmFsIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaXNpbnRlcm5hbCI6dHJ1ZX19.MHCjiTbhxz7qfZtzq_BbbycLssN_aHq-rHUxuMHB614"}}
+[2019-12-22 15:49:22,648]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /instagram [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py", line 44, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/instagram/resources.py", line 20, in get
+    token = claim['token_instagram']
+KeyError: 'token_instagram'
+[2019-12-22 15:49:22,649]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/instagram?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-22 15:50:23,920]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /instagram [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py", line 44, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/instagram/resources.py", line 21, in get
+    token = claim['token_instagram']
+KeyError: 'token_instagram'
+[2019-12-22 15:50:23,922]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/instagram?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-22 15:55:04,400]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/token?client_key=internal&client_secret=internal123", "request": {"client_key": "internal", "client_secret": "internal123"}, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzcwMDQ5MDQsIm5iZiI6MTU3NzAwNDkwNCwianRpIjoiNjZlM2RjZGItMjNlOS00NTM2LTg2MDgtNTM2ZTgxMjMyOTIwIiwiZXhwIjoxNTc3MDkxMzA0LCJpZGVudGl0eSI6ImludGVybmFsIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaXNpbnRlcm5hbCI6dHJ1ZX19.W9zay9G8H5lXIIza03Hk6z1m0IzIC8TnkG8vTo8KLMY"}}
+[2019-12-22 15:57:47,045]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/token?client_key=internal&client_secret=internal123", "request": {"client_key": "internal", "client_secret": "internal123"}, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzcwMDUwNjcsIm5iZiI6MTU3NzAwNTA2NywianRpIjoiNTMxZjU2ZGUtOTJkMy00ZmFkLTg0ODctYzZkMzI1MDMzYjhkIiwiZXhwIjoxNTc3MDkxNDY3LCJpZGVudGl0eSI6ImludGVybmFsIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiY2xpZW50X2tleSI6ImludGVybmFsIiwic3RhdHVzIjp0cnVlLCJ0b2tlbl9pbnN0YWdyYW0iOiIxNDkwMjY2MDk5LjE2NzdlZDAuMTA2ODFhNmFhOTI3NGUzODg0NThlODlkOTVlYzdmZmUiLCJpc2ludGVybmFsIjp0cnVlfX0.sywfesQ_dh-gEWnHUDuxzJ5oiu89o95wNYspkOxEPUE"}}
+[2019-12-22 15:58:50,849]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /instagram [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py", line 44, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/instagram/resources.py", line 22, in get
+    url = self.host+self.token+'&count=1'
+AttributeError: 'GetFotoandCaption' object has no attribute 'token'
+[2019-12-22 15:58:50,851]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/instagram?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-22 16:00:57,369]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/instagram?", "request": {}, "response": {"foto": "https://scontent.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66391286_2294013900705901_4376247166940848407_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_ohc=lgXLtbNOIWcAX9oj8Pr&oh=f1a5d4364cc241ce27e4ca906f945b97&oe=5EA9E951", "caption": "Semoga gelar ini berkah dunia akhirat. Aamiin"}}

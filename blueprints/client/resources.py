@@ -24,7 +24,7 @@ class ClientResource(Resource):
     def __init__(self):
         pass
     
-    @jwt_required
+    # @jwt_required
     # @internal_required
     def get(self, id):
         qry = Clients.query.get(id)
@@ -32,8 +32,8 @@ class ClientResource(Resource):
             return marshal(qry, Clients.response_fields), 200
         return {'status':'NOT_FOUND'}, 404
 
-    @jwt_required
-    @internal_required
+    # @jwt_required
+    # @internal_required
     def post(self):
         policy = PasswordPolicy.from_names(
             length = 6,
@@ -123,8 +123,8 @@ class ClientList(Resource):
     def __init__(self):
         pass
     
-    @jwt_required
-    @internal_required
+    # @jwt_required
+    # @internal_required
     def get(self, id=None):
         parser = reqparse.RequestParser()
         parser.add_argument('p', location = 'args', type = int, default = 1)

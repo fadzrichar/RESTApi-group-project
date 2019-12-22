@@ -17,8 +17,9 @@ class GetFotoandCaption(Resource):
     @internal_required
     def get(self):
         claim = get_jwt_claims()
-        token = claim['instagram_token']
-        url = self.host+self.token+'&count=1'
+        print(claim)
+        token = claim['token_instagram']
+        url = self.host+token+'&count=1'
 
         rq = requests.get(url)
         content = rq.json()
@@ -32,6 +33,8 @@ class GetFotoandCaption(Resource):
 
 class ConvertFoto(Resource):
     
+    @jwt_required
+    @internal_required
     def foto(self):
         instagram_foto = GetFotoandCaption().get()['foto']
         req.urlretrieve(instagram_foto, 'foto.jpg')
