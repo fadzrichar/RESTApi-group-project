@@ -759,3 +759,43 @@ KeyError: 'output'
 [2019-12-22 17:07:37,246]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": {"Makanan": "Eton Mess", "Diskon": "20%", "Gambar": "https://www.themealdb.com/images/media/meals/uuxwvq1483907861.jpg"}}
 [2019-12-22 17:09:54,562]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": {"Makanan": "Bakewell tart", "Diskon": "30%", "Gambar": "https://www.themealdb.com/images/media/meals/wyrqqq1468233628.jpg"}}
 [2019-12-22 18:07:46,373]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:82} WARNING - REQUEST_LOG	{"status_code": 404, "method": "GET", "code": "404 NOT FOUND", "uri": "/meal?", "request": {}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
+[2019-12-22 21:14:16,305]{/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /promo [GET]
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 107, in wrapper
+    verify_jwt_in_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
+    jwt_data, jwt_header = _decode_jwt_from_request(request_type='access')
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 314, in _decode_jwt_from_request
+    raise NoAuthorizationError(errors[0])
+flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
+[2019-12-22 21:14:16,308]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/promo?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-22 21:14:30,170]{/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /promo [GET]
+Traceback (most recent call last):
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 107, in wrapper
+    verify_jwt_in_request()
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
+    jwt_data, jwt_header = _decode_jwt_from_request(request_type='access')
+  File "/home/alta4/Alterra Batch 4/Flask/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 314, in _decode_jwt_from_request
+    raise NoAuthorizationError(errors[0])
+flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
+[2019-12-22 21:14:30,171]{/home/alta4/Alterra Batch 4/Flask/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/promo?", "request": {}, "response": {"message": "Internal Server Error"}}
