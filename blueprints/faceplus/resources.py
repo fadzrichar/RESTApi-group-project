@@ -3,6 +3,7 @@ from flask import Blueprint
 from flask_restful import Api, reqparse, Resource
 from blueprints.instagram.resources import GetFotoandCaption, ConvertFoto
 from flask_jwt_extended import JWTManager, verify_jwt_in_request, get_jwt_claims, jwt_required
+from blueprints import internal_required
 
 bp_faceplus = Blueprint('faceplus', __name__)
 api = Api(bp_faceplus)
