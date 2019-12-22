@@ -727,3 +727,33 @@ flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
 [2019-12-22 16:43:34,885]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": "Maaf, gambar yang anda post tidak memenuhi kebetuhan"}
 [2019-12-22 16:45:35,002]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": "Maaf, gambar yang anda post tidak memenuhi ketentuan(Tidak terdapat gambar makanan)"}
 [2019-12-22 16:46:50,070]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": {"Makanan": "Bakewell tart", "Diskon": "30%", "Gambar": "https://www.themealdb.com/images/media/meals/wyrqqq1468233628.jpg"}}
+[2019-12-22 16:51:45,610]{/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /promo [GET]
+Traceback (most recent call last):
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/promo/resources.py", line 20, in get
+    score = PostImgRecognizer().post()['score']
+  File "/home/alta9/Documents/Alta Batch 4/Phase 2/Week 1/Day 1/env_flask/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/paralleldot/resources.py", line 28, in post
+    datajson = datajson['output']
+KeyError: 'output'
+[2019-12-22 16:51:45,614]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:93} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/promo?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2019-12-22 16:55:02,179]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": {"Makanan": "Eton Mess", "Diskon": "20%", "Gambar": "https://www.themealdb.com/images/media/meals/uuxwvq1483907861.jpg"}}
+[2019-12-22 17:00:50,807]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": "Caption tidak memenuhi ketentuan"}
+[2019-12-22 17:02:36,589]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": ["HAPPY", "BIRTHDAY", "Jokowi"]}
+[2019-12-22 17:04:58,517]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": ["happy", "birthday", "jokowi"]}
+[2019-12-22 17:05:28,932]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": ["happy", "birthday", "jokowi"]}
+[2019-12-22 17:05:57,093]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": "Caption tidak memenuhi ketentuan"}
+[2019-12-22 17:06:33,139]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": ["happy", "birthday", "jokowi"]}
+[2019-12-22 17:07:37,246]{/home/alta9/Documents/Gorup Project/Restful-API/RESTApi-group-project/blueprints/__init__.py:71} INFO - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/promo?", "request": {}, "response": {"Makanan": "Eton Mess", "Diskon": "20%", "Gambar": "https://www.themealdb.com/images/media/meals/uuxwvq1483907861.jpg"}}

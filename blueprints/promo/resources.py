@@ -22,7 +22,12 @@ class Promotion(Resource):
         foodname = Getmealdb().get()['meals']['Name']
         pict = Getmealdb().get()['meals']['Gambar']
         words = caption.split(' ')
-        if 'Jokowi' in words and 'HAPPY' in words and 'BIRTHDAY' in words:
+        lowerword=[]
+        for data in words:
+            kecil = data.lower()
+            lowerword.append(kecil)
+
+        if 'jokowi' in lowerword and 'happy' in lowerword and 'birthday' in lowerword:
             if score > 0.8:
                 return {
                     'Makanan'   :foodname,
