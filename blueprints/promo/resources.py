@@ -33,29 +33,29 @@ class Promotion(Resource):
                     'Makanan'   :foodname,
                     'Diskon'    :'50%',
                     'Gambar'    :pict
-                }
+                }, 200
             elif score > 0.5:
                 return {
                     'Makanan'   :foodname,
                     'Diskon'    :'30%',
                     'Gambar'    :pict
-                }
+                }, 200
             elif score > 0.2:
                 return {
                     'Makanan'   :foodname,
                     'Diskon'    :'20%',
                     'Gambar'    :pict
-                }
+                }, 200
             elif score > 0:
                 return {
                     'Makanan'   :foodname,
                     'Diskon'    :'10%',
                     'Gambar'    :pict
-                }
+                }, 200
             else:
-                return "Maaf, gambar yang anda post tidak memenuhi ketentuan(Tidak terdapat gambar makanan)"
+                return {'message':"Maaf, gambar yang anda post tidak memenuhi ketentuan(Tidak terdapat gambar makanan)"}, 404
         else:
-            return "Caption tidak memenuhi ketentuan"
+            return {'message' : "Caption tidak memenuhi ketentuan"}, 404
           
     
 api.add_resource(Promotion,'')

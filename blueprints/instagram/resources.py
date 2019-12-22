@@ -29,7 +29,7 @@ class GetFotoandCaption(Resource):
         return {
             'foto' : foto,
             'caption' : caption
-        }, 200
+        }
 
 class ConvertFoto(Resource):
     
