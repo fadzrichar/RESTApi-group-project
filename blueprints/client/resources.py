@@ -76,6 +76,7 @@ class ClientResource(Resource):
         parser = reqparse.RequestParser()
         parser.add_argument('client_key', location = 'args', required = True)
         parser.add_argument('client_secret', location = 'args', required = True)
+        parser.add_argument('token_instagram', location = 'args', required = True)
         parser.add_argument('status', type=inputs.boolean, location = 'args', required = True)
         args = parser.parse_args()
 
@@ -92,6 +93,7 @@ class ClientResource(Resource):
         qry.client_key = args['client_key']
         qry.client_secret = password_digest
         qry.status = args['status']
+        qry.token_instagram = args['token_instagram']
         db.session.commit()
 
         return marshal(qry, Clients.response_fields), 200, {'Content-Type' : 'application/json' }
