@@ -16,7 +16,8 @@ class Promotion(Resource):
     caption = GetFotoandCaption().get()['caption']
     foodname = Getmealdb().get()['meals']['Name']
     pict = Getmealdb().get()['meals']['Gambar']
-    
+
+    @jwt_required
     def get(self):
         words = self.caption.split(' ')
         if 'Jokowi' in words and 'HAPPY' in words and 'BIRTHDAY' in words:
@@ -48,5 +49,6 @@ class Promotion(Resource):
                 return "Maaf, gambar yang anda post tidak memenuhi kebetuhan"
         else:
             return "Caption tidak memenuhi ketentuan"
-
+          
+    
 api.add_resource(Promotion,'')
